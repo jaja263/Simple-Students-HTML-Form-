@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form.css">
+    <title>DemoFrom</title>
+</head>
+
+<body>
+    <form action="/result.html" method="GET">
+        <fieldset>
+            <legend>Students</legend>
+        <div>
+            <input type="text" name="Fist Name" placeholder="Fist Name">
+            <input type="text" name="Last Name" placeholder="Last Name">
+        </div>
+        <div>
+            <input type="number" name="Age " placeholder="your Age ">
+            <input type="number" name="roll number" placeholder="Roll number">
+        </div>
+        <div>
+            <label for="birthday">Please Enter your age :</label>
+            <input type="date" id="birthday" name="Birthday">
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+        </div>
+        <div>
+            <input list="Class" placeholder="Selct Your Class" name="Class">
+            <datalist id="Class">
+                <option value="11th">
+                <option value="21th">
+                <option value="31th">
+                <option value="41th">
+            </datalist>
+            <select name="City" id="">
+                <option value="" selected disabled>Select your city</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Islambad">Islambad</option>
+            </select>
+            <div>
+                <label for="">Chose your Subjects:</label>
+                <br>
+                <label for="english">English</label>
+                <input type="checkbox" name="Subject" value="English">
+                <br>
+                <label for="english">Urdu</label>
+                <input type="checkbox" name="Subject" value="Urdu">
+                <br>
+                <label for="english">Islamic</label>
+                <input type="checkbox" name="Subject" value="Islamic">
+                <br>
+                <div>
+                    <label for="">Bio</label>
+                    <br>
+                    <textarea name="Bio" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="text" name="Usernae" placeholder="Chose your User Name" required>
+                    <input type="password" name="Passward" placeholder="Chose your Password" maxlength="8"
+                        minlength="8">
+                </div>
+                <label for="">Please upload your picture:</label>
+                <br>
+                <input type="file" name="Picture" multiple>
+            </div>
+        </div>
+
+
+        <!-- <button type="submit">Submit</button> -->
+        <input type="submit">
+        <input type="reset">
+    </fieldset>
+    </form>
+</body>
+
+</html>
